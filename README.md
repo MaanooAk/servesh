@@ -58,3 +58,9 @@ cd servesh
 go install
 ```
 
+Or
+
+```
+go get -u github.com/MaanooAk/servesh
+```
+
