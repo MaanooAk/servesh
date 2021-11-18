@@ -46,7 +46,7 @@ func main() {
 	fmt.Printf("Address: http://localhost:%d/\n", port)
 
 	http.HandleFunc("/", handler)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), nil))
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
